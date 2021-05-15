@@ -2,9 +2,9 @@ import React from 'react'
 
 export const Placeholder = ({message}) => {
     return (
-        <>
-         {message}   
-        </>
+        <h2 id="list" classNamee="placeholder">
+            {message}
+        </h2>  
     )
 }
 

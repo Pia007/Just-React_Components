@@ -4,9 +4,9 @@
     --robot:'Roboto', sans-serif;
     --black: hsl(0, 0, 0);
     --white: rgb(255, 255, 255);
-    --limegreen: hsl(120, 71%, 49%);
-    --real-purp: hsl(275, 62%, 55%);
-    --bg-gray: hsla(280, 3%, 53%, 0.931);
+    --funorange: hsl(24, 67%, 51%);
+    --real-blue: hsl(187, 53%, 55%);
+    --bg-gray: hsla(300, 4%, 5%, 0.726);
     --fs-sm: 1rem;
     --fs-reg: 2rem;
     --fs-lg: 3.5rem;
@@ -14,7 +14,7 @@
     --fw-bold: 500;
     --fw-xl-bold: 600;
     --fw-light: 300;
-  }
+}
 * {
     margin: 0;
     padding: 0;
@@ -25,57 +25,154 @@
     box-sizing: border-box;
 }
 html {
-position: relative;
+    position: relative;
 }
 html,
 body {
-height: 100%;
+    height: 100%;
+    /* background: black; */
+    
 }
 body {
-font-family: var(--robot);
-color: var(--limegreen);
-background:var(--white);
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-position: relative;
+    font-family: var(--robot);
+    color: var(--real-blue);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
 }
 .card {
     position: fixed;
-    width: 60rem;
-    height: 30rem;
+    width: 70rem;
+    height: 40rem;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background: black;
-    font-size: 25px;
+    background-color: var(--bg-gray);
+    font-size: var(--fs-lg);
     text-align: center;
-    border: 12px ridge var(--real-purp);
+    border: 18px ridge var(--real-blue);
+    box-shadow: 0px 2px 10px 20px var(--funorange);
     border-radius: 8px;
     color: var(--real-purp);
 }
 .card-body {
     height: auto;
-    margin: 8rem 4rem;
+    margin: 8rem 6rem;
     font-size: 3.5rem;
     align-items: center;
+    
+}
+.greeting {
+    margin-bottom: 2rem;
 }
 .placeholder {
     height: 6rem;
     width: 6rem;
+    margin: 2rem auto;
 }
-.btn button {
+.btns {
     margin-top: 4rem;
     height: 3.5rem;
     width: 14rem;
     border: none;
     border-radius: 1.75rem;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
-    color: var(--real-purp);
-    background: var(--limegreen);
+    color: var(--real-blue);
+    background: var(--funorange);
     transition-duration: 0.8s;
+}
+.btns:hover {
+    background: var(--real-blue);
+    box-shadow: 0px 3px 10px 10px var(--funorange);
+    transform: translateY(18px);
+    color: var(--funorange);
+  }
+.btns:focus {
+    background: var(--real-blue);
+    box-shadow: 0px 6px 12px 12px var(--funorange);
+    color: var(--funorange);
+}
+
+/* max screen 1024px */
+@media screen and (max-width: 64em) {
+    body {
+        max-width: 100%;
+    }
+    .card {
+        max-width: 55rem;
+        height: auto;
+    }
+}
+
+/* max screen 900px */
+@media screen and (max-width: 56.25em) {
+    body {
+        max-width: 100%;
+    }
+    .card {
+        max-width: 50rem;
+        height: auto;
+    }
+}
+
+/* max screen 768px */
+@media screen and (max-width: 48em) {
+    body {
+        max-width: 100%;
+    }
+    .card {
+        max-width: 45rem;
+        font-size: var(--fs-reg);
+    }
+    .card-body {
+        font-size: 2.5rem;
+    }
+    .greeting {
+        margin-bottom: 2rem;
+    }
+    
+}
+/* max screen 600px */
+@media screen and (max-width: 37.5rem) {
+    body {
+        max-width: 100%;
+    }
+    .card {
+        max-width: 100%;
+        height: auto;
+    }
+    
+}
+  
+/* max screen 450px */
+@media screen and (max-width: 28.125em) {
+    .card-body {
+        height: auto;
+        margin: 2.5rem auto;
+        font-size: 2.5rem;
+    }
+    .btn button{
+        height: 3rem;
+        width: 12rem;
+        margin-top: 2.5rem;
+        font-size: 1rem;
+    }
+    .greeting {
+        font-size: 2.5rem;
+        margin-bottom: .75rem;
+    }
+    .card-body placeholder {
+        font-size: 1.5rem;
+        margin: 1.5rem auto;
+    }
+    #list  {
+        font-size: 2.1rem;
+        margin-top: 2rem;
+    }
 }

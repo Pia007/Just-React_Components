@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import Placeholder from './components/Placeholder';
+import Greeting from './components/Greeting';
 import Button from './components/Button';
 import './App.css';
 
@@ -15,26 +16,27 @@ function App() {
   const handleCount = () => {
     setCount(count + 1) 
   
-    if( count - 1 < skillsArr.length ) {
-        let skill = skillsArr[count]
-        setSkill(skillsArr[count]) 
-    } 
+    if(count < skillsArr.length ) {
+      // let skill = skillsArr[count]
+      setSkill(skillsArr[count]) 
+    } else if(count === skillsArr.length) {
+        setSkill("That's all for now!");  
+    } else{
+      setSkill("Goodbye!")
+    }
   }
-
+    
    
   return (
     <>
       <body>
         <div className="card">
           <section className ="card-body">
-            <h2 id="list" classNamee="placeholder">
+            <Greeting />
+            
             <Placeholder  message={skill} />
-              {/* This is a placeholder */}
-            </h2>
-            <div className="btn">
-              <Button clickHandler= {handleCount} btntext={"Skills"} />
-              {/* <button id="btns">Skills</button> */}
-            </div>
+            
+            <Button clickHandler= {handleCount} btntext={"Skills"} />
           </section>
         </div>
       </body>

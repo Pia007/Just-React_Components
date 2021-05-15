@@ -2,7 +2,7 @@ import React from 'react'
 
 function Button({clickHandler, btntext}) {
     return (
-        <div>
+        <div className="btn">
             <button className="btns" onClick={clickHandler}>{btntext}</button>
         </div>
     )
