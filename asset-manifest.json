@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Just-React_Components/static/css/main.f92be564.chunk.css",
-    "main.js": "/Just-React_Components/static/js/main.21b756fc.chunk.js",
-    "main.js.map": "/Just-React_Components/static/js/main.21b756fc.chunk.js.map",
+    "main.css": "/Just-React_Components/static/css/main.d7a23040.chunk.css",
+    "main.js": "/Just-React_Components/static/js/main.2e589320.chunk.js",
+    "main.js.map": "/Just-React_Components/static/js/main.2e589320.chunk.js.map",
     "runtime-main.js": "/Just-React_Components/static/js/runtime-main.5e37a004.js",
     "runtime-main.js.map": "/Just-React_Components/static/js/runtime-main.5e37a004.js.map",
     "static/js/2.e6d47839.chunk.js": "/Just-React_Components/static/js/2.e6d47839.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.b811dcad.chunk.js": "/Just-React_Components/static/js/3.b811dcad.chunk.js",
     "static/js/3.b811dcad.chunk.js.map": "/Just-React_Components/static/js/3.b811dcad.chunk.js.map",
     "index.html": "/Just-React_Components/index.html",
-    "static/css/main.f92be564.chunk.css.map": "/Just-React_Components/static/css/main.f92be564.chunk.css.map",
+    "static/css/main.d7a23040.chunk.css.map": "/Just-React_Components/static/css/main.d7a23040.chunk.css.map",
     "static/js/2.e6d47839.chunk.js.LICENSE.txt": "/Just-React_Components/static/js/2.e6d47839.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5e37a004.js",
     "static/js/2.e6d47839.chunk.js",
-    "static/css/main.f92be564.chunk.css",
-    "static/js/main.21b756fc.chunk.js"
+    "static/css/main.d7a23040.chunk.css",
+    "static/js/main.2e589320.chunk.js"
   ]
 }
