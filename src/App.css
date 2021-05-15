@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+:root {
+    --robot:'Roboto', sans-serif;
+    --black: hsl(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    --limegreen: hsl(120, 71%, 49%);
+    --real-purp: hsl(275, 62%, 55%);
+    --bg-gray: hsla(280, 3%, 53%, 0.931);
+    --fs-sm: 1rem;
+    --fs-reg: 2rem;
+    --fs-lg: 3.5rem;
+  
+    --fw-bold: 500;
+    --fw-xl-bold: 600;
+    --fw-light: 300;
+  }
+* {
+    margin: 0;
+    padding: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+position: relative;
+}
+html,
+body {
+height: 100%;
+}
+body {
+font-family: var(--robot);
+color: var(--limegreen);
+background:var(--white);
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+position: relative;
+}
+.card {
+    position: fixed;
+    width: 60rem;
+    height: 30rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+    font-size: 25px;
+    text-align: center;
+    border: 12px ridge var(--real-purp);
+    border-radius: 8px;
+    color: var(--real-purp);
+}
+.card-body {
+    height: auto;
+    margin: 8rem 4rem;
+    font-size: 3.5rem;
+    align-items: center;
+}
+.placeholder {
+    height: 6rem;
+    width: 6rem;
+}
+.btn button {
+    margin-top: 4rem;
+    height: 3.5rem;
+    width: 14rem;
+    border: none;
+    border-radius: 1.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--real-purp);
+    background: var(--limegreen);
+    transition-duration: 0.8s;
+}
